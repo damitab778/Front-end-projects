@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyNotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="ikony/css/fontello.css">
+</head>
+<body>
+
+    
+    <div class="menu">
+        <h1><i class="demo-icon icon-sticky-note-o"></i>MyNotes</h1>
+        <div class="menu-buttons">
+            <button class="add"><i class="demo-icon icon-plus"></i>Dodaj</button>
+            <button class="delete-all"><i class="demo-icon icon-trash"></i>Usuń wszystkie</button>
+        </div>
+        
+    </div>
+    
+    <div class="note-area">
+        
+        
+    </div>
+    
+    
+    <div class="note-panel">
+        <h2>Dodaj notatkę</h2>
+        <label for="category">Wybierz kategorię</label>
+        <select id="category">
+            <option value="0" disabled selected>- wybierz kategorię -</option>
+            <option value="1">Zakupy</option>
+            <option value="1">Praca</option>
+            <option value="1">Inne</option>
+        </select> 
+        
+        <label for="text">Wpisz treść</label>
+        <textarea name="" id="text"></textarea>
+        
+        <p class="error">Uzupełnij wszystkie pola!</p>
+        
+        <div class="panel-buttons">
+            <button class="save icon"><i class="demo-icon icon-floppy"></i>Zapisz</button>
+            <button class="cancel icon"><i class="demo-icon icon-cancel-circled2"></i>Anuluj</button>
+        </div>
+    </div>
+    
+  
+     <script src="script.js"></script>
+</body>
+</html>

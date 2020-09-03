@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="ikony/css/fontello.css">
+</head>
+<body>
+     <div class="wrapper">
+          <p class="info">
+            <i class="demo-icon icon-brush"></i>
+            <i class="demo-icon icon-help "></i>
+          </p>
+          
+          <h1>Stoper</h1>
+          <p class="stopwatch">0:00</p>
+          <p class="time">0:00</p>
+          
+          <div class="buttons">
+              <button class="start"><i class="demo-icon icon-play"></i></button>
+              <button class="pause"><i class="demo-icon icon-pause"></i></button>
+              <button class="stop"><i class="demo-icon icon-stop"></i></button>
+              <button class="reset"><i class="demo-icon icon-cancel"></i></button>
+              <button class="history"> archiwum</button>
+          </div>
+          
+          <ul class="time-list">
+          </ul>
+          <div class="colors">
+            <div class="color one"></div>
+            <div class="color sec"></div>
+            <div class="color thrd"></div>
+         </div>
+     </div>
+    
+    <div class="modal-shadow">
+        <div class="modal">
+            <h3>Instrukcja:</h3>
+            <p><i class="demo-icon icon-play"></i> - Start</p>
+            <p><i class="demo-icon icon-pause"></i> - Pauza</p>
+            <p><i class="demo-icon icon-stop"></i> - Stop</p>
+            <p><i class="demo-icon icon-cancel"></i> - Skasuj wszystko (wraz z archiwum)</p>
+            <p><strong>archiwum</strong> - zobacz wcześniejsze pomiary</p>
+            
+            <button class="close">Zamknij</button>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

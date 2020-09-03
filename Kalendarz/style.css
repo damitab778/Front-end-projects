@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(233,233,233);
+}
+
+.counter-app{
+    position: relative;
+}
+
+.app-body{
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.6);
+    overflow: hidden;
+}
+
+.image-section{
+    position: relative;
+    height: 400px;
+    background-image: url(default.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.settings-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 20px 30px;
+    font-size: 32px;
+    background-color: transparent;
+    transition: transform .3s; 
+    cursor: pointer;
+    color: #fff;
+}
+
+.settings-btn:hover{
+    transform: rotate(45deg) scale(.9);
+}
+
+.time-section{
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-evenly;
+    -ms-align-items: center;
+    align-items: center;
+    height: 400px;
+    background-color: #fff;
+    z-index: 100;
+    
+}
+
+h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.time-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    width: 18%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.number {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.settings{
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 50px 30px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    opacity: 0;
+    transition: transform .5s, opacity .3s;
+}
+
+.active{
+    transform: translateX(430px);
+    opacity: 1;
+}
+
+h1{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    
+}
+
+label{
+    margin-bottom: 10px;
+    
+}
+
+input{
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.date {
+    text-align: center;
+}
+
+.save{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color .4s, color .4s;
+}
+
+.save:hover{
+    color: #fff;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
